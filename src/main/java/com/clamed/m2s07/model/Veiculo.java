@@ -31,4 +31,16 @@ public class Veiculo {
         this.anoFabricacao = anoFabricacao;
         this.cor = cor;
     }
+
+    @Override
+    public String toString() {
+        return "Veiculo{" +
+                "placa='" + placa + '\'' +
+                ", tipoVeiculo=" + tipoVeiculo +
+                ", nome='" + nome + '\'' +
+                ", anoFabricacao=" + anoFabricacao +
+                ", cor='" + cor + '\'' +
+                ", multas=" + multas +
+                '}';
+    }
 }

@@ -7,6 +7,8 @@ import com.clamed.m2s07.repository.VeiculoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class Aplicacao {
 
@@ -32,6 +34,12 @@ public class Aplicacao {
         multa3.setValor(380F);
         multaRepo.save(multa3);
 
+
+        System.out.println("Listando veiculos e multas:");
+        System.out.println();
+        List<Veiculo> veiculos = veiculoRepo.findAll();
+        veiculos.forEach(System.out::println);
+        System.out.println("---------------------------");
     }
 }
 
